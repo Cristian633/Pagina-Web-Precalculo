@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Modulo 3</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="modulo1.html">Modulo 1</a></li>
+            <li><a href="modulo2.html">Modulo 2</a></li>
+            <li><a href="modulo3.html">Modulo 3</a></li>
+            <li><a href="ZonaPractica.html">Zona de Practica</a></li>
+        </ul>
+    </nav>
+    <h2>Modulo 3</h2>
+    <h3>Funciones polinomiales y funciones trigonométricas</h3>
+    <h3>División de polinomio</h3>
+    <div class="text-box">
+        <p>
+            La división de polinomios es un proceso similar a la división de números. 
+            Se utiliza para dividir un polinomio (dividendo) por otro polinomio (divisor) y 
+            obtener un cociente y, en algunos casos, un residuo.
+        </p>
+        <p>Ejemplo
+            Supongamos que queremos dividir 2x3+3x2−5x+62x^3 + 3x^2 - 5x + 62x3+3x2−5x+6 entre x−1x - 1x−1:
+            </p>
+            <p>1.	Divide: 2x3÷x=2x22x^3 \div x = 2x^22x3÷x=2x2.</p>
+            <p>2.	Multiplica: 2x2(x−1)=2x3−2x22x^2(x - 1) = 2x^3 - 2x^22x2(x−1)=2x3−2x2.</p>
+            <p>3.	Resta: (2x3+3x2)−(2x3−2x2)=5x2(2x^3 + 3x^2) - (2x^3 - 2x^2) = 5x^2(2x3+3x2)−(2x3−2x2)=5x2.</p>
+            <p>4.	Baja el siguiente término: 5x2−5x=5x2−5x5x^2 - 5x = 5x^2 - 5x5x2−5x=5x2−5x.</p>
+            <p>5.	Divide: 5x2÷x=5x5x^2 \div x = 5x5x2÷x=5x.</p>
+            <p>6.	Multiplica: 5x(x−1)=5x2−5x5x(x - 1) = 5x^2 - 5x5x(x−1)=5x2−5x.</p>
+            <p>7.	Resta: (5x2−5x)−(5x2−5x)=0(5x^2 - 5x) - (5x^2 - 5x) = 0(5x2−5x)−(5x2−5x)=0.</p>
+            <p>8.	Baja el siguiente término: 0+6=60 + 6 = 60+6=6.</p>
+            <p>9.	Divide: 6÷(x−1)6 \div (x - 1)6÷(x−1) es el residuo.</p>
+    </div>
+
+   <iframe src="" frameborder="0"></iframe>
+    <h3>Ceros reales de Funciones Polinomiales</h3>
+    <div class="text-box">
+        <p>
+            Los Ceros reales de una función polinómica son los valores de xxx para los cuales el polinomio se iguala a cero.
+             Encontrar estos ceros es fundamental para analizar el comportamiento de la función. 
+        </p>
+        <p>Ejemplo
+            Consideremos el polinomio P(x)=x3−6x2+11x−6P(x) = x^3 - 6x^2 + 11x - 6P(x)=x3−6x2+11x−6.
+            </p>
+            <p>1.	Intentar la factorización: Podemos probar con valores enteros (como 1,2,31, 2, 31,2,3).</p>
+            <p>2.	Evaluamos:
+                •	P (1) =1−6+11−6=0P (1) = 1 - 6 + 11 - 6 = 0P (1) =1−6+11−6=0 (cero).
+                •	P (2) =8−24+22−6=0P (2) = 8 - 24 + 22 - 6 = 0P (2) =8−24+22−6=0 (cero).
+                •	P (3) =27−54+33−6=0P(3) = 27 - 54 + 33 - 6 = 0P(3)=27−54+33−6=0 (cero).
+                </p>
+            <p>3.	Factorización: Sabemos que P(x)=(x−1) (x−2) (x−3) P(x) = (x - 1) (x - 2) (x - 3) P(x)=(x−1) (x−2) (x−3).</p>
+            <p>Por lo tanto, los ceros reales son x=1x = 1x=1, x=2x = 2x=2 y x=3x = 3x=3.</p>
+    </div>
+      <h3>Números Complejos</h3>
+      <div class="text-box">
+      <p>Los números complejos son una extensión de los números reales y se representan en la forma a+bia + bia+bi, donde aaa y bbb son números reales, y iii es la unidad imaginaria, 
+        definida como i2=−1i^2 = -1i2=−1. </p>
+        <p>Ejemplo</p>
+        <p>Consideremos el número complejo z=1+iz = 1 + iz=1+i:</p>
+        <p>•	Módulo: r=12+12=2r = \sqrt{1^2 + 1^2} = \sqrt{2}r=12+12=2</p>
+        <p>•	Argumento: θ=tan⁡−1(1)=π4\theta = \tan^{-1}\left(1\right) = \frac{\pi}{4}θ=tan−1(1)=4π</p>
+        <p>En forma polar, se puede expresar como:
+            z=2(cos4π+isin4π)
+            </p>
+    </div>
+    <h3>Ceros Complejos y el teorema fundamental del Algebra </h3>
+    <div class="text-box">
+        <p>El Teorema Fundamental del Álgebra establece que todo polinomio de grado nnn (donde n>0n > 0n>0) 
+            con coeficientes complejos tiene exactamente nnn raíces complejas, contando multiplicidades. </p>
+            <p>Ejemplo</p>
+            <p>Consideremos el polinomio P(x)=x3+2x2+5x+6P(x) = x^3 + 2x^2 + 5x + 6P(x)=x3+2x2+5x+6. Para encontrar sus raíces, podríamos usar métodos como la factorización, la regla de signos de Descartes, o métodos numéricos.
+                Si encontramos que el polinomio tiene una raíz compleja, como 1+i1 + i1+i, por el teorema de conjugación de los números complejos, también debe tener su conjugado, 1−i1 - i1−i como raíz.
+                    </p>
+    </div>
+    <h3>Medida de un Angulo</h3>
+    <div class="text-box">
+        <p>La medida de un ángulo se puede expresar de varias maneras, las más comunes son:
+        </p>
+        <p> 1. Grados</p>
+        <p> 2. Radianes</p>
+        <p>   3. Medición en la práctica</p>
+        <p>Ejemplo</p>
+        <p>Si tienes un ángulo de 90∘90^\circ90∘ y deseas convertirlo a radianes:
+            90∘×(180∘π)=2π radianes
+            </p>
+    </div>
+    <h3>Trigonometría de Triángulos Rectángulos</h3>
+    <div class="text-box">
+        <p>La trigonometría de triángulos rectángulos se basa en las relaciones entre los ángulos y los 
+            lados de un triángulo que tiene un ángulo recto (90 grados). </p>
+    </div>
+    
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+
+<script src="js/script.js"></script>
+</html>

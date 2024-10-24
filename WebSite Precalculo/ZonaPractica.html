@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios de Precálculo</title>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+  <header>
+    <h1>Ejercicios de Precálculo</h1>
+    <p>Ingresa tus propios ejercicios o resuelve los que ya preparamos para ti.</p>
+  </header>
+
+  <main class="container">
+    <!-- Lado Izquierdo: Ingresar Ejercicios -->
+    <section class="left-side">
+      <h2>Ingresa un ejercicio</h2>
+      <form id="exerciseForm">
+        <label for="type">Selecciona el tipo de ejercicio:</label>
+        <select id="type">
+          <option value="linear">Ecuación Lineal</option>
+          <option value="quadratic">Ecuación Cuadrática</option>
+          <option value="system">Sistema de Ecuaciones</option>
+        </select>
+
+        <label for="inputExercise">Escribe el ejercicio:</label>
+        <input type="text" id="inputExercise" placeholder="Ej: 2x + 3 = 7" required>
+
+        <button type="submit">Resolver</button>
+      </form>
+      <p id="solution" class="feedback"></p>
+    </section>
+
+    <!-- Lado Derecho: Ejercicios Predefinidos -->
+    <section class="right-side">
+      <h2>Ejercicios para Resolver</h2>
+
+      <div class="exercise">
+        <div class="exercise-description">
+          <h3>Ecuaciones Lineales</h3>
+          <p>Resuelve la ecuación: <strong>2x + 3 = 7</strong></p>
+        </div>
+        <div class="exercise-input">
+          <input type="number" id="answer1" placeholder="Tu respuesta" />
+          <button onclick="checkAnswer(1, 2)">Comprobar</button>
+          <p id="feedback1" class="feedback"></p>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-description">
+          <h3>Sistemas de Ecuaciones</h3>
+          <p>¿Cuál es el valor de <em>x</em> en el sistema? <br> x + y = 5 <br> 2x - y = 3</p>
+        </div>
+        <div class="exercise-input">
+          <input type="number" id="answer2" placeholder="Tu respuesta" />
+          <button onclick="checkAnswer(2, 2)">Comprobar</button>
+          <p id="feedback2" class="feedback"></p>
+        </div>
+      </div>
+
+      <div class="exercise">
+        <div class="exercise-description">
+          <h3>Factores Cuadráticos</h3>
+          <p>Encuentra una raíz de la ecuación cuadrática: <strong>x² - 4 = 0</strong></p>
+        </div>
+        <div class="exercise-input">
+          <input type="number" id="answer3" placeholder="Tu respuesta" />
+          <button onclick="checkAnswer(3, 2)">Comprobar</button>
+          <p id="feedback3" class="feedback"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
